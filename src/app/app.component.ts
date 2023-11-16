@@ -12,12 +12,9 @@ export class AppComponent {
     new Persona('juan', 'morales'),
     new Persona('Karen', 'Gutierrez'),
     new Persona('Ana', 'Yañez')
-  ]; //arreglo con varios objetos de la clase Persona, si hay un espacio en blanco entre las comillas, no aparecera el valor del placehordr
-  nombreInput: string = '';
-  apellidoInput: string = '';
+  ]; //arreglo con varios objetos de la clase Persona, si hay un espacio en blanco entre las comillas, no aparecera el valor del placehorder
 
-  agregarPersona(){
-    let persona1 = new Persona(this.nombreInput, this.apellidoInput);
-    this.personas.push( persona1 );
+  personaAgregada(persona: Persona){
+    this.personas.push(persona);
   }
 }
